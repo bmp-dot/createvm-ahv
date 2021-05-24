@@ -1,0 +1,46 @@
+{
+    "api_version": "3.1",
+    "metadata": {
+        "kind": "vm"
+    },
+    "spec": {
+        "name": "",
+        "resources": {
+            "num_threads_per_core": 1,
+            "num_vcpus_per_socket": 1,
+            "nic_list": [
+                {
+                    "nic_type": "NORMAL_NIC",
+                    "subnet_reference": {
+                        "kind": "subnet",
+                        "name": "",
+                        "uuid": ""
+                    },
+                    "is_connected": true,
+                    "trunked_vlan_list": []
+                }
+            ],
+            "num_sockets": 1,
+            "is_agent_vm": false,
+            "memory_size_mib": 1024,
+            "power_state": "ON",
+            "guest_customization": {
+                "sysprep": {
+                    "install_type": "PREPARED",
+                    "unattend_xml": ""
+                }
+            },
+            "disk_list": [
+                {
+                    "data_source_reference": {
+                        "kind": "image",
+                        "uuid": ""
+                    },
+                    "device_properties": {
+                        "device_type": "DISK"
+                    }
+                }
+            ]
+        }
+    }
+}
